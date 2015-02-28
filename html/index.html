@@ -2,8 +2,6 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
- 
-
   <meta name="viewport" content="width=device-width">
   <!-- initial-scale=1, minimum-scale=1, maximum-scale=2, use-scalable=no"> -->
   <!-- 
@@ -23,17 +21,22 @@
       /*p:선택자 */
   </style>
   -->
+  
+  <!--[if lt IE 9]>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
 </head>
 
 <body>
    <div class="container">
-   <a href="#main">메뉴건너뛰기</a>
+   <a href="#main" class="skip">메뉴건너뛰기</a>
       <header class="header">
         <h1>HTML5</h1>
         <nav class="gnb">
             <h2>메인 메뉴</h2> 
+            <button type="button">메뉴 열기</button>
             <ul>
               <li>
                 <a href="#">메뉴 1</a>
@@ -70,6 +73,7 @@
           <input type="submit" value="검색">
         </form>
       </header> 
+
       <div class="body">
         <main id="main">
           #main
@@ -95,13 +99,15 @@
         <p>Copyright &copy; FE.CAMP. ALL rights reserved.</p>
       </footer>
       
-      <!-- haeder, footer, element는 한페이지않에 여러번 등장할 수 있음. 
+      <!-- haeder, footer, element는 한페이지 안에 여러번 등장할 수 있음. 
       -->
 
     <!-- id안의 내용은 사용자를 정의하는 것임, 특수문자로 시작할 수 없음.but '_언더바'는 됨. 한글도 상관없음 
     -->
 
    </div>
+   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+   <script src="default.js"></script>
    <!-- 
 <strong>strong</strong>
 
